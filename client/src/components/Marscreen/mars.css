@@ -1,0 +1,55 @@
+/* src/pages/Mars.css */
+
+.mars-container {
+  padding: 2rem;
+  color: #ffffff;
+  background-color: #0b0c10;
+  text-align: center;
+}
+
+.controls {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.controls select,
+.controls input[type="date"] {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.mars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.mars-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 216, 255, 0.2);
+}
+
+.mars-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.mars-card p {
+  font-size: 0.9rem;
+  color: #00d8ff;
+}
+
+.loader,
+.error {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}

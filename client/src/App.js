@@ -1,6 +1,8 @@
 import "./App.css";
 import Home from "./components/HomeScreen/home";
 import Earth from "./components/EarthScreen/earth";
+import Mars from "./components/Marscreen/mars";
+
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,8 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/earth" element={<Earth />} />
-        {/* <Route path="/mars" element={<Mars />} />
-        <Route path="/asteroids" element={<Asteroids />} /> */}
+        <Route path="/mars" element={<Mars />} />
+        {/* <Route path="/asteroids" element={<Asteroids />} /> */}
       </Routes>
     </div>
   );
