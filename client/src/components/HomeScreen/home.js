@@ -1,6 +1,7 @@
 // src/pages/Home.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link, Route } from "react-router-dom";
 import "./home.css";
 
 function Home() {
@@ -29,10 +30,18 @@ function Home() {
       <nav className="navbar">
         <div className="logo">🚀 Explore the Cosmos</div>
         <ul className="nav-links">
-          <li>Home</li>
-          <li>Earth View</li>
-          <li>Mars</li>
-          <li>Asteroid Radar</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/earth">Earth View</Link>
+          </li>
+          <li>
+            <Link to="/mars">Mars</Link>
+          </li>
+          <li>
+            <Link to="/asteroids">Asteroid Radar</Link>
+          </li>
         </ul>
       </nav>
 

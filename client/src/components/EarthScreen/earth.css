@@ -1,0 +1,43 @@
+/* src/pages/Earth.css */
+
+.earth-container {
+  padding: 2rem;
+  color: #ffffff;
+  background-color: #0b0c10;
+  text-align: center;
+}
+
+.earth-container input[type="date"] {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.earth-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.earth-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 216, 255, 0.2);
+}
+
+.earth-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.loader,
+.error {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
