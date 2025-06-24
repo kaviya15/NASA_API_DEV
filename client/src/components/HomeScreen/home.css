@@ -35,15 +35,13 @@ body {
 
 .nav-links li {
   cursor: pointer;
-  transition: color 0.3s;
   border-radius: 30px;
-  padding: 4px 10px;
-  text-decoration: none;
-  background: white;
+  padding: 9px 16px;
+  /* background: white; */
 }
 
 .nav-links li:hover {
-  background-color: #00d8ff;
+  background-color: #ffffff44;
 }
 
 .apod-container {
@@ -72,11 +70,17 @@ body {
 }
 
 .apod-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  /* background: rgba(255, 255, 255, 0.05); */
   padding: 2rem;
   border-radius: 10px;
   max-width: 800px;
-  box-shadow: 0 0 20px rgba(0, 216, 255, 0.2);
+  /* box-shadow: 0 0 20px rgba(0, 216, 255, 0.2); */
 }
 
 .apod-card h2 {

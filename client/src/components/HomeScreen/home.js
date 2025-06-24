@@ -30,7 +30,7 @@ function Home() {
       <nav className="navbar">
         <div className="logo">🚀 Explore the Cosmos</div>
         <ul className="nav-links">
-          <li>
+          <li className="glass">
             <Link to="/">Home</Link>
           </li>
           <li>
@@ -50,7 +50,7 @@ function Home() {
         style={{ backgroundImage: `url(${apod.url})` }}
       >
         <div className="apod-overlay">
-          <h1>Astronomy Picture of the Day</h1>
+          <h1 style={{'fontSize':'4em', 'margin':'10px'}}>Astronomy Picture of the Day</h1>
           <p>{apod.date}</p>
           <div className="apod-card">
             <h2>{apod.title}</h2>
