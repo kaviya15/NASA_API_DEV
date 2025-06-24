@@ -45,29 +45,23 @@ function Home() {
         </ul>
       </nav>
 
-      <div
-        className="apod-hero"
-        style={{ backgroundImage: `url(${apod.url})` }}
-      >
-        <div className="apod-overlay">
-          <h1 style={{'fontSize':'4em', 'margin':'10px'}}>Astronomy Picture of the Day</h1>
-          <p>{apod.date}</p>
-          <div className="apod-card">
-            <h2>{apod.title}</h2>
+      <div className="apod-overlay">
+        <h1 className="home-main-head" style={{ 'fontSize': '4em', 'margin': '10px' }}>Astronomy Picture of the Day</h1>
+
+        <div className="apod-card">
+          <div class="image-container">
+            <img src={apod.url} alt="Spiral Galaxy M61" />
+          </div>
+          <div className="text-container">
+            <h2 style={{'margin':'0'}}>{apod.title}</h2>
             <p>{apod.explanation}</p>
-            <div className="button-group">
-              <a href={apod.hdurl} target="_blank" rel="noreferrer">
-                Download
-              </a>
-              {/* <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                  apod.title
-                )}&url=${apod.url}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Share
-              </a> */}
+            <div className="btn-sec">
+              <p>{apod.date}</p>
+              <div className="button">
+                <a href={apod.hdurl} target="_blank" rel="noreferrer" style={{ 'color': 'black' }}>
+                  Download
+                </a>
+              </div>
             </div>
           </div>
         </div>

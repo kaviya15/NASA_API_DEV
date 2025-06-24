@@ -3,6 +3,10 @@
   text-decoration: none;
 }
 
+body {
+  background: #06061b;
+}
+
 a {
       text-decoration: none;
       color: white;
