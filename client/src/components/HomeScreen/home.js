@@ -46,17 +46,17 @@ function Home() {
       </nav>
 
       <div className="apod-overlay">
-        <h1 className="home-main-head" style={{ 'fontSize': '4em', 'margin': '10px' }}>Astronomy Picture of the Day</h1>
+        <h1 className="home-main-head" style={{ 'fontSize': '4.5em', 'margin': '10px' }}>Astronomy Picture of the Day</h1>
 
         <div className="apod-card">
           <div class="image-container">
             <img src={apod.url} alt="Spiral Galaxy M61" />
           </div>
           <div className="text-container">
-            <h2 style={{'margin':'0'}}>{apod.title}</h2>
+            <h2 style={{'margin':'0', color:'#B8F4FF'}}>{apod.title}</h2>
             <p>{apod.explanation}</p>
             <div className="btn-sec">
-              <p>{apod.date}</p>
+              <p style={{'fontStyle':'italic'}}>{apod.date}</p>
               <div className="button">
                 <a href={apod.hdurl} target="_blank" rel="noreferrer" style={{ 'color': 'black' }}>
                   Download
