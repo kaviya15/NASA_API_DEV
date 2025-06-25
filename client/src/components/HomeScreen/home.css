@@ -75,10 +75,11 @@ body {
 }
 
 .home-main-head {
-font-size: 3rem;
-    color: #ffffff;
-    font-weight: 100;git 
-    text-align: left;
+  font-size: 3rem;
+  color: #00ccff;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
 }
 
 .apod-card {
